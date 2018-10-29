@@ -1,0 +1,15 @@
+[package]
+  name = "reader_writer"
+  version = "0.1.0"
+  authors = ["Akshay <patwardhanakshay8@gmail.com>"]
+  edition = "2018"
+[dependencies]
+  serde = "1.0"
+  serde_json = "1.0"
+  serde_derive = "1.0"
+  boolinator = "2.4"
+  hdk = { git = "https://github.com/holochain/holochain-rust" , branch = "develop" }
+  holochain_wasm_utils = { git = "https://github.com/holochain/holochain-rust" , branch = "develop" }
+[lib]
+  path = "src/lib.rs"
+  crate-type = ["cdylib"]
